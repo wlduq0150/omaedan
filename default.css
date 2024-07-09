@@ -1,0 +1,707 @@
+@font-face {
+    font-family: "LINESeedKR-Bd";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: "LINESeedKR-Bd";
+}
+
+* {
+    box-sizing: border-box;
+}
+header {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-family: "Noto Sans KR", "留묒� 怨좊뵓", sans-serif;
+}
+#header {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: block;
+}
+header img {
+    border: none;
+    vertical-align: top;
+}
+
+header li {
+    list-style-type: none;
+}
+header a:link,
+header a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+#wrap {
+    width: 100%;
+}
+#header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 68px;
+}
+.header_wrap {
+    height: 100%;
+    padding-top: 10px;
+}
+.header_wrap h1 {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+.header_wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    width: 90px;
+}
+.gnb li {
+    float: right;
+    padding-right: 10px;
+}
+.gnbi1 img {
+    width: 120px;
+}
+.gnbi2 img {
+    width: 90px;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.floating {
+    position: fixed;
+    bottom: 35px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 98;
+
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.floating.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating > a > .gotoTOP {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    background: #909090;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating > a > .gotoKakao {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    background: url("images/kakao.png");
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.floating > a > .gotoKakao > img {
+    width: 100%;
+}
+
+.floating > a > .gotoTOP > svg {
+    font-size: 27px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 25px 20px;
+    border-top: 1px solid rgb(218, 218, 218);
+}
+
+footer > .footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer > .footer-content > p {
+    color: black;
+    margin-bottom: 0;
+}
+.footer-content > .info {
+    display: flex;
+    width: 100%;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section > .sectionWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg1.jpeg);
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 80px 0;
+}
+
+#section1 > .sectionWrapper > .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#section1 > .sectionWrapper > .content > .textLine {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: 20%;
+}
+
+#section1 > .sectionWrapper > .content > .textLine > p {
+    color: #114d6f;
+    font-size: 120px;
+    /* margin: 5px; */
+    -webkit-text-stroke: 2px white;
+    transition: all 0.5s;
+    white-space: nowrap;
+    padding: 12px;
+}
+
+#section1 > .sectionWrapper > .content > .textLine > p > .high {
+    color: #f1931b;
+    -webkit-text-stroke: 2px white;
+    cursor: pointer;
+}
+#section1 > div > div > div > p:nth-child(4) > span {
+    transition: all 0.3s;
+    color: #f1931b;
+}
+
+#section1 > div > div > div > p:nth-child(4) > span:hover {
+    color: #e76363 !important;
+}
+
+#section2 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+#section2 > .sectionWrapper > .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2 > .sectionWrapper > .content > .textLine {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#section2 > .sectionWrapper > .content > .textLine > h1 {
+    color: white;
+    font-size: 72px;
+    margin: 0;
+}
+
+#section2 > .sectionWrapper > .content > .textLine > p {
+    color: white;
+    padding: 0 10px;
+    background-color: #ff9c00;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#section2 > .sectionWrapper > .content > .imgBoxLine {
+}
+
+#section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+    gap: 9rem;
+}
+
+#section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .imgWrapper {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .imgWrapper > img {
+    object-fit: cover;
+    position: relative;
+    right: 80px;
+}
+
+#section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .head {
+    color: #e76363;
+    font-size: 33px;
+}
+
+#section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .textBox > p {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+    margin-bottom: 50px;
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 > h1 {
+    font-size: 60px;
+    color: white;
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 > .boxLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    margin-bottom: 50px;
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box {
+    width: 400px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 30px;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box:hover {
+    transform: scale(1.02);
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box > svg {
+    font-size: 40px;
+    color: #0e80d5;
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box > .tBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box > .tBox > span {
+    color: black;
+    font-size: 25px;
+}
+
+#section3 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#section3 > .sectionWrapper > .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section3 > .sectionWrapper > .content > .textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section3 > .sectionWrapper > .content > .textBox > h1 {
+    font-size: 60px;
+    color: rgb(0, 49, 99);
+}
+
+#section3 > .sectionWrapper > .content > .textBox > h1 > span {
+    color: rgb(255, 156, 0);
+}
+
+#section3 > .sectionWrapper > .content > .boxLine {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10rem;
+}
+
+#section3 > .sectionWrapper > .content > .boxLine > .boxWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section3 > .sectionWrapper > .content > .boxLine > .boxWrapper > img {
+}
+
+#section3 > .sectionWrapper > .content > .boxLine > .boxWrapper > p {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#section3 > div > div > div.boxLine > div > p:nth-child(2) {
+    margin-top: 15px !important;
+}
+
+#section4 .imgHead {
+    width: 100%;
+}
+
+#section4 .imgHead > img {
+    width: 100%;
+}
+
+@media all and (max-width: 1600px) {
+    #section1 > .sectionWrapper > .content > .textLine {
+        margin-left: 10%;
+    }
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 120px;
+    }
+}
+
+@media all and (max-width: 1440px) {
+}
+
+@media all and (max-width: 1280px) {
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 110px;
+    }
+    #section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper {
+        gap: 5rem;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine {
+        gap: 2.5rem;
+    }
+    #section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .textBox > p {
+        font-size: 24px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box {
+        width: 370px;
+    }
+    #section3 > .sectionWrapper > .content > .boxLine {
+        gap: 8rem;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    #section1 > .sectionWrapper > .content > .textLine {
+        margin-left: 8%;
+    }
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 85px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine > h1 {
+        font-size: 70px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine > p {
+        font-size: 48px;
+    }
+    #section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > h1 {
+        font-size: 58px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box {
+        width: 290px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box > .tBox > span {
+        font-size: 20px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box > svg {
+        font-size: 35px;
+    }
+    #section3 > .sectionWrapper > .content > .boxLine {
+        gap: 5rem;
+    }
+}
+/* 작업 후 834까지 */
+@media all and (max-width: 834px) {
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 70px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine > h1 {
+        font-size: 68px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine > p {
+        font-size: 46px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine {
+        flex-direction: column;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 {
+        margin-bottom: 0px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box {
+        width: 350px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box > .tBox > span {
+        font-size: 25px;
+    }
+    #section3 > .sectionWrapper > .content > .boxLine {
+        flex-wrap: wrap;
+        gap: 8rem;
+    }
+}
+/* 작업 후 600까지 */
+@media all and (max-width: 479px) {
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 45px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine > h1 {
+        font-size: 50px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine > p {
+        font-size: 27px;
+    }
+    #section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .imgWrapper {
+        width: 300px;
+        height: 300px;
+    }
+    #section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .head {
+        font-size: 29px;
+    }
+    #section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper > .box > .textBox > p {
+        font-size: 22px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > h1 {
+        font-size: 31px;
+    }
+    #section3 > .sectionWrapper > .content > .boxLine {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+    .footer-content > .info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .footer-content > .info > p {
+        margin: 5px;
+    }
+}
+/* 작업 후 479까지 */
+@media all and (max-width: 390px) {
+    #section2 > .sectionWrapper > .content > .textLine > h1 {
+        font-size: 44px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine > p {
+        font-size: 24px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > h1 {
+        font-size: 29px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box {
+        width: 330px;
+    }
+    #section2 > .sectionWrapper > .content > .textLine2 > .boxLine > .box > .tBox > span {
+        font-size: 23px;
+    }
+    #section3 > .sectionWrapper > .content > .textBox > h1 {
+        font-size: 49px;
+    }
+    footer > .footer-content > p {
+        font-size: 13px;
+    }
+    .footer-content > .info > p {
+        font-size: 13px;
+    }
+}
+/* 작업 후 414까지 */
+@media all and (max-width: 320px) {
+}
+
+#sec2 {
+    background: url("./images/sec2.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.sec2_title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec2_title img {
+    width: 100%;
+    padding: 7% 10% 1% 10%;
+}
+
+#sec2 .under_line {
+    border-bottom: 1px solid #fff;
+}
+
+#sec2 .bold {
+    font-weight: bold;
+}
+
+.sec2_btn {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    padding: 8px 0;
+}
+
+.sec2_btn a {
+    font-size: 16px;
+    color: #357c22;
+}
+
+.sec2_btn img {
+    width: 100%;
+    padding: 0 25% 7% 25%;
+}
+
+.sec2_wrap p {
+    text-align: center;
+    color: #fff;
+}
+
+.sec2_wrap p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.sec2_wrap p:nth-child(3) {
+    margin-top: 20px;
+}
+
+.sec2_wrap p:nth-child(1) img {
+    width: 200px;
+    height: auto;
+}
+
+.sec2_wrap p span {
+    color: #fff;
+}
+
+.reason {
+    position: relative;
+    padding: 100px 0;
+    background-color: #ededed;
+    width: 100%;
+}
+
+.reason .container {
+    display: flex;
+    justify-content: center;
+}
+
+.reason .row {
+    display: flex;
+    justify-content: center;
+}
+
+.imgHead img {
+    width: 100%;
+    height: auto;
+    display: block; /* 이미지 아래에 생길 수 있는 여백을 없애기 위해 사용 */
+}
