@@ -190,7 +190,7 @@ section > .sectionWrapper {
 }
 
 #section1 {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: url(images/bg1.jpeg);
     background-repeat: no-repeat !important;
@@ -209,10 +209,13 @@ section > .sectionWrapper {
 }
 
 #section1 > .sectionWrapper > .content > .textLine {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    margin-left: 20%;
+    align-content: center;
+    text-align: center;
+    /* margin-left: 20%; */
+    padding: 20px;
 }
 
 #section1 > .sectionWrapper > .content > .textLine > p {
@@ -222,7 +225,7 @@ section > .sectionWrapper {
     -webkit-text-stroke: 2px white;
     transition: all 0.5s;
     white-space: nowrap;
-    padding: 12px;
+    padding: 6px;
 }
 
 #section1 > .sectionWrapper > .content > .textLine > p > .high {
@@ -455,19 +458,22 @@ section > .sectionWrapper {
 
 @media all and (max-width: 1600px) {
     #section1 > .sectionWrapper > .content > .textLine {
-        margin-left: 10%;
+        /* margin-left: 10%; */
     }
     #section1 > .sectionWrapper > .content > .textLine > p {
-        font-size: 120px;
+        font-size: 90px;
     }
 }
 
 @media all and (max-width: 1440px) {
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 80px;
+    }
 }
 
 @media all and (max-width: 1280px) {
     #section1 > .sectionWrapper > .content > .textLine > p {
-        font-size: 110px;
+        font-size: 70px;
     }
     #section2 > .sectionWrapper > .content > .imgBoxLine > .boxWrapper {
         gap: 5rem;
@@ -488,10 +494,10 @@ section > .sectionWrapper {
 
 @media all and (max-width: 1024px) {
     #section1 > .sectionWrapper > .content > .textLine {
-        margin-left: 8%;
+        /* margin-left: 8%; */
     }
     #section1 > .sectionWrapper > .content > .textLine > p {
-        font-size: 85px;
+        font-size: 65px;
     }
     #section2 > .sectionWrapper > .content > .textLine > h1 {
         font-size: 70px;
@@ -522,7 +528,7 @@ section > .sectionWrapper {
 /* 작업 후 834까지 */
 @media all and (max-width: 834px) {
     #section1 > .sectionWrapper > .content > .textLine > p {
-        font-size: 70px;
+        font-size: 45px;
     }
     #section2 > .sectionWrapper > .content > .textLine > h1 {
         font-size: 68px;
@@ -550,7 +556,7 @@ section > .sectionWrapper {
 /* 작업 후 600까지 */
 @media all and (max-width: 479px) {
     #section1 > .sectionWrapper > .content > .textLine > p {
-        font-size: 45px;
+        font-size: 35px;
     }
     #section2 > .sectionWrapper > .content > .textLine > h1 {
         font-size: 50px;
