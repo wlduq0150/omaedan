@@ -593,11 +593,14 @@ section > .sectionWrapper {
 }
 /* 작업 후 479까지 */
 @media all and (max-width: 390px) {
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 30px;
+    }
     #section2 > .sectionWrapper > .content > .textLine > h1 {
-        font-size: 44px;
+        font-size: 25px;
     }
     #section2 > .sectionWrapper > .content > .textLine > p {
-        font-size: 24px;
+        font-size: 15px;
     }
     #section2 > .sectionWrapper > .content > .textLine2 > h1 {
         font-size: 29px;
@@ -620,6 +623,9 @@ section > .sectionWrapper {
 }
 /* 작업 후 414까지 */
 @media all and (max-width: 320px) {
+    #section1 > .sectionWrapper > .content > .textLine > p {
+        font-size: 25px;
+    }
 }
 
 #sec2 {
