@@ -246,17 +246,39 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+        <!-- ------ 회원가입 ------ -->
+        <script type="text/javascript">
+            var hpt_trace_info={'_mode':'join','_memid':'회원아이디'};
+        </script>
+
+        <!-- ------ 주문 ------ -->
+        <script type="text/javascript">
+            var hpt_trace_info={'_mode':'order','_memid':'회원아이디','_total_price':'결제금액'};
+        </script>
+
+        <!-- ------ 문의 ------ -->
+        <script type="text/javascript">
+            var hpt_trace_info={'_mode':'q','_memid':'회원아이디'};
+        </script>
+        <!-- ------ 메인 스크립트 ------ -->
+        <!-- Smartlog -->
+        <script type="text/javascript">
+            var hpt_info={'_account':'UHPT-28293', '_server': 'a28'};
+        </script>
+        <script language="javascript" src="//cdn.smlog.co.kr/core/smart.js" charset="utf-8"></script>
+        <noscript><img src="//a28.smlog.co.kr/smart_bda.php?_account=28293" style="display:none;width:0;height:0;" border="0"/></noscript> 
+
         <script
             async="true"
             src="//log1.toup.net/mirae_log_chat_common.js?adkey=rktjhMj"
             charset="UTF-8"
         ></script>
-        <script>
+        <!-- <script>
             document
                 .querySelector("#section1 > div > div > div > p:nth-child(4) > span")
                 .addEventListener("click", () => {
                     location.href = "tel: 010-9768-1518";
-                });
+                }); -->
         </script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
